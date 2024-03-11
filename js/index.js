@@ -29,3 +29,17 @@ function navbarScrollEffect() {
     navbar.style.backdropFilter = "0px";
   }
 }
+
+// This section deals with detecting mediaquery using javascript for better control on how things should change according to different screen sizes
+
+const mediaQuerySm = window.matchMedia("(min-width: 576px)");
+const mediaQueryMd = window.matchMedia("(min-width: 768px)");
+const mediaQueryLg = window.matchMedia("(min-width: 990px)");
+
+mediaQueryMd.addEventListener("change", handleResizeChange);
+mediaQuerySm.addEventListener("change", handleResizeChange);
+mediaQueryLg.addEventListener("change", handleResizeChange);
+
+handleResizeChange(mediaQueryMd);
+handleResizeChange(mediaQuerySm);
+handleResizeChange(mediaQueryLg);
