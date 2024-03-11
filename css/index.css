@@ -150,7 +150,25 @@ h6 {
   padding: 25px 20px;
   line-height: 0px;
   height: fit-content;
+  cursor: pointer;
   max-width: fit-content;
+  max-height: fit-content;
+  transition: all 0.2s linear;
+}
+
+.outline-cta:hover {
+  border: 1px solid;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #739072;
+  background: #739072;
+  text-wrap: nowrap;
+  color: #ECE3CE;
+  padding: 25px 20px;
+  line-height: 0px;
+  height: fit-content;
+  max-width: fit-content;
+  cursor: pointer;
   max-height: fit-content;
   transition: all 0.2s linear;
 }
@@ -167,10 +185,51 @@ h6 {
   line-height: 0px;
   height: fit-content;
   max-width: fit-content;
+  cursor: pointer;
   max-height: fit-content;
   transition: all 0.2s linear;
 }
 
+.filled-cta:hover {
+  border: 1px solid;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #3A4D39;
+  background: #3A4D39;
+  text-wrap: nowrap;
+  color: #ECE3CE;
+  padding: 25px 20px;
+  line-height: 0px;
+  height: fit-content;
+  max-width: fit-content;
+  cursor: pointer;
+  max-height: fit-content;
+  transition: all 0.2s linear;
+}
+
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}
 
 /*************************************
  * THIS IS THE NAVBAR OF THE WEBSITE *
@@ -348,4 +407,41 @@ h6 {
   width: 50%;
   justify-content: end;
   align-items: center;
+}
+
+
+/**********************************************
+ * THIS IS THE WANT TO SUPPORT SECTION STYLES *
+ **********************************************/
+
+
+.want-support-section {
+  background: rgba(254, 251, 243, 0.4);
+  padding: 5vh 0px;
+
+}
+
+
+/*******************************
+ * THESE ARE THE FOOTER STYLES *
+ *******************************/
+
+
+.footer-section {
+  padding: 5vh 0px;
+}
+
+.footer-link {
+  color: #41444B;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.selected-footer-link {
+  color: #739072;
+}
+
+.footer-link:hover {
+  color: #739072;
+  transition: all 0.2s linear;
 }
