@@ -1,0 +1,91 @@
+/************************************************************************************
+ * THIS IS THE LANDING SECTION OF THE WEBSITE THAT CONTAINS THE LANDING OF THE PAGE *
+ ************************************************************************************/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  width: 50%;
+  height: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  align-items: start;
+}
+
+.hero-heading {
+  font-size: 100px;
+}
+
+.hero-img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-img {
+  height: 87%;
+  width: 100%;
+  background-image: url(../../img/landing_img.png);
+  overflow: hidden;
+  background-position: bottom 0px right 0px;
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+
+
+/*******************************************
+ * THESE ARE THE WHAT WE DO SECTION STYLES *
+ *******************************************/
+
+
+.nurture {
+  display: flex;
+  margin: 10% 0px;
+  height: 70%;
+  width: 100%;
+}
+
+.nuture-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.nuture-image {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: start;
+  align-items: center;
+}
+
+.nurture-img-reversed {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: end;
+  align-items: center;
+}
+
+.nuture-reversed {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10% 0px;
+  height: 70%;
+  width: 100%;
+}

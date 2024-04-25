@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/login_styles/login.css">
+  <link rel="stylesheet" href="../css/widgets_styles/toastbar.css">
+  <link rel="stylesheet" media="(min-width: 721px) and (max-width: 1239px)" href="../css/login_styles/login_t.css">
+  <link rel="stylesheet" media="(max-width: 720px)" href="../css/login_styles/login_m.css">
+</head>
+
+<body>
+  <section>
+    <div class="drawer">
+      <div class="unselectedNavbarItem">
+        <h5 class="drawer-menu">
+          <a href="../index.html">Home</a>
+        </h5>
+        <div class="unselectedNavbarItemIndicator">
+        </div>
+      </div>
+      <div class="unselectedNavbarItem">
+        <h5 class="drawer-menu">
+          <a href="../pages/campaigns.html">Campaigns</a>
+        </h5>
+        <div class="unselectedNavbarItemIndicator">
+        </div>
+      </div>
+      <div class="selectedNavbarItem">
+        <h5 class="drawer-menu">
+          <a href="../pages/donate.html">Donate</a>
+        </h5>
+        <div class="selectedNavbarItemIndicator">
+        </div>
+      </div>
+      <div class="unselectedNavbarItem">
+        <h5 class="drawer-menu">
+          <a href="../pages/about.html">About us</a>
+        </h5>
+        <div class="unselectedNavbarItemIndicator">
+        </div>
+      </div>
+      <div class="unselectedNavbarItem">
+        <h5 class="drawer-menu">
+          <a href="../pages/contact.html">Contact us</a>
+        </h5>
+        <div class="unselectedNavbarItemIndicator">
+        </div>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="navbar-logo-container">
+        <a href="../index.html" style="cursor: pointer;"><img src="../img/logo_long.svg" alt=""
+            class="navbar-title"></a>
+      </div>
+      <div class="floating-navbar-container">
+        <div class="floating-navbar-glass">
+          <div class="unselectedNavbarItem">
+            <h5 class="body2">
+              <a href="../index.html">Home</a>
+            </h5>
+            <div class="unselectedNavbarItemIndicator">
+            </div>
+          </div>
+          <div class="unselectedNavbarItem">
+            <h5 class="body2">
+              <a href="../pages/campaigns.html">Campaigns</a>
+            </h5>
+            <div class="unselectedNavbarItemIndicator">
+            </div>
+          </div>
+          <div class="unselectedNavbarItem">
+            <h5 class="body2">
+              <a href="../pages/donate.html">Donate</a>
+            </h5>
+            <div class="unselectedNavbarItemIndicator">
+            </div>
+          </div>
+          <div class="unselectedNavbarItem">
+            <h5 class="body2">
+              <a href="../pages/about.html">About us</a>
+            </h5>
+            <div class="unselectedNavbarItemIndicator">
+            </div>
+          </div>
+          <div class="unselectedNavbarItem">
+            <h5 class="body2">
+              <a href="../pages/contact.html">Contact us</a>
+            </h5>
+            <div class="unselectedNavbarItemIndicator">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-menu-container">
+        <div class="collapsed-navbar-button" style=`@media screen and (min-width: 1240px) { display: hidden; }`
+          id="drawerButton">
+          <img src="../img/icons/menu.svg" alt="">
+        </div>
+      </div>
+      <div class="signin-button-container">
+      </div>
+    </div>
+  </section>
+  <section class="fullScreen-div">
+    <div class="hero-section">
+      <div class="login-img-container">
+        <div class="login-heading column" style="justify-content: center; align-items: end;">
+          <h2 class="text-accent2" id="login-heading"><span class="text-accent">Snout</span> & Sign Up:</h2>
+          <h4 id="login-subheading" class="text-accent2">Join Our Pack and Start Making Tails Wag 🐶</h4>
+        </div>
+        <img src="../img/contact_img.png" alt="" class="login-img">
+      </div>
+      <div class="login-form-container centered-div column">
+        <div class="login-form-div column centered-div">
+          <div class="login-form-heading column" style="justify-content: center; align-items: center;">
+            <h2 class="text-accent2" id="login-form-heading"><span class="text-accent">Snout</span> & Sign Up:</h2>
+            <h4 id="login-form-subheading" class="text-accent2">Join Our Pack and Start
+              Making Tails Wag 🐶</h4>
+          </div>
+          <div class="row">
+            <div style="margin-right: 20px;">
+              <h4 id="signup-text">Signup</h4>
+            </div>
+            <div class="switch">
+              <input type="checkbox" id="toggleAll" />
+              <label for="toggleAll"></label>
+            </div>
+            <div style="margin-left: 20px;">
+              <h4 id="login-text">Login</h4>
+            </div>
+
+          </div>
+          <form class="login-form" onsubmit="return false">
+            <div class="box">
+              <input type="name" placeholder="" id="name">
+              <label for="name" id="nameLabel">Name</label>
+            </div>
+            <div class="box">
+              <input type="email" placeholder="" id="email">
+              <label for="email" id="emailLabel">Email</label>
+            </div>
+            <button class="outline-cta" id="submit">Signup</button>
+          </form>
+          <div id="toastbar">This is yet to be implemented</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../js/index.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

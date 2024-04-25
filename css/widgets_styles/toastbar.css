@@ -1,0 +1,78 @@
+/********************************************************************************************************************************************************************
+ * THIS IS THE BASIC STYLES FOR THE TOASTBAR THAT DEFINES HOW A TOASTBAR SHOULD LOOK IN GENERAL  IT IS INSPIRED BY TOASTIFY.JS LIBRARY BUT IMPLEMENTED FROM SCRATCH *
+ ********************************************************************************************************************************************************************/
+
+#toastbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background: rgba(254, 251, 243, 0.5);
+  color: var(--text);
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+/* This class is used to set toastbar to visible... will be triggered by the companion javascript */
+
+#toastbar.show {
+  visibility: visible;
+  /* We have used web-kit animations as well to extend the support to the browsers that depend on apple's webkit as their rendering tool */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+/* These are basically the animation classes that describes the keyframes for the animation of the toastbar... */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

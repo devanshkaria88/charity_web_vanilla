@@ -1,0 +1,141 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  height: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 4.2rem;
+}
+
+.hero-img-container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-img {
+  height: 100%;
+}
+
+.mouse-icon {
+  position: absolute;
+  visibility: hidden;
+  bottom: 5%;
+  left: 50%;
+}
+
+
+.mission-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mission-img-container {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-img {
+
+  height: 100%;
+  width: auto;
+  border-radius: 40%;
+  object-fit: cover;
+
+}
+
+.mission-desc-container {
+  height: 55%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-desc {
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-desc p {
+  font-size: 1rem;
+}
+
+.charity-stat {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.charity-stat-circle {
+  padding: 15%;
+  border-radius: 50%;
+  margin-bottom: 5%;
+  background: var(--accent2);
+  color: var(--background);
+  font-size: 2.5rem;
+}
+
+.charity-stat-desc-container {
+  margin-left: 0px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.charity-stat-desc-title {
+  font-size: 2rem;
+}
+
+.charity-stat-desc {
+  font-size: 1rem;
+}
+
+.charity-stat-reversed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.charity-stat-desc-container-reversed {
+  margin-right: 0%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

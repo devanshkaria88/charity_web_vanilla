@@ -4,32 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paws & Pups</title>
+  <title>Our Campaigns</title>
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/navbar.css">
-  <!-- Home Stylesheets according to screen sizes -->
-  <link rel="stylesheet" href="css/home_styles/home.css">
-  <link rel="stylesheet" media="(min-width: 721px) and (max-width: 1239px)" href="css/home_styles/home_t.css">
-  <link rel="stylesheet" media="(max-width: 720px)" href="css/home_styles/home_m.css">
-
+  <link rel="stylesheet" href="../css/campagin_styles/campagin.css">
+  <link rel="stylesheet" media="(min-width: 721px) and (max-width: 1239px)"
+    href="../css/campagin_styles/campaign_t.css">
+  <link rel="stylesheet" media="(max-width: 720px)" href="../css/campagin_styles/campaign_m.css">
 </head>
 
 <body>
-  <!-- This is the navbar of the website -->
-  <section style="position: relative;">
+  <!-- This section represents the navbar of the website -->
+  <section>
     <div class="drawer">
-      <div class="selectedNavbarItem">
+      <div class="unselectedNavbarItem">
         <h5 class="drawer-menu">
           <a href="../index.html">Home</a>
         </h5>
-        <div class="selectedNavbarItemIndicator">
+        <div class="unselectedNavbarItemIndicator">
         </div>
       </div>
-      <div class="unselectedNavbarItem">
+      <div class="selectedNavbarItem">
         <h5 class="drawer-menu">
           <a href="../pages/campaigns.html">Campaigns</a>
         </h5>
-        <div class="unselectedNavbarItemIndicator">
+        <div class="selectedNavbarItemIndicator">
         </div>
       </div>
       <div class="unselectedNavbarItem">
@@ -54,7 +53,7 @@
         </div>
       </div>
       <div style="margin-top: 10%;" class="outline-cta">
-        <a href="./pages/login.html">Login/Signup</a>
+        <a href="login.html">Login/Signup</a>
       </div>
     </div>
     <div class="navbar">
@@ -64,18 +63,18 @@
       </div>
       <div class="floating-navbar-container">
         <div class="floating-navbar-glass">
-          <div class="selectedNavbarItem">
+          <div class="unselectedNavbarItem">
             <h5 class="body2">
               <a href="../index.html">Home</a>
             </h5>
-            <div class="selectedNavbarItemIndicator">
+            <div class="unselectedNavbarItemIndicator">
             </div>
           </div>
-          <div class="unselectedNavbarItem">
+          <div class="selectedNavbarItem">
             <h5 class="body2">
               <a href="../pages/campaigns.html">Campaigns</a>
             </h5>
-            <div class="unselectedNavbarItemIndicator">
+            <div class="selectedNavbarItemIndicator">
             </div>
           </div>
           <div class="unselectedNavbarItem">
@@ -116,100 +115,33 @@
       </div>
     </div>
   </section>
+  <!-- This section represents the hero section of the campaigns page -->
   <section>
     <div class="hero fullScreen-div">
       <div class="hero-title">
-        <h1 class="text-accent heading-text">
-          Help Canines?
+        <h1 class="hero-heading text-secondary-accent">
+          <span class="font-family: PlayfairDisplay-Regular;">
+            Our
+          </span> <br> <span class="text-accent" style="font-family: PlayfairDisplay-Bold;">Campaigns</span>
         </h1>
-        <h3 class="text-accent2 playfair" style="margin-top: 10px; font-weight: 400;">
-          We work to make man’s best <br>friend feel safer!
-        </h3>
-
-        <div class="outline-cta" style="margin-top: 20px;">
-          <a href="./pages/campaigns.html">Learn more</a>
-        </div>
       </div>
       <div class="hero-img-container">
-        <div class="hero-img"></div>
+        <img src="../img/campaign_hero.png" alt="" srcset="" class="hero-img">
       </div>
       <div class="mouse-icon">
         <img src="../img/icons/Mouse.svg" alt="" srcset="">
       </div>
     </div>
   </section>
-  <!-- This is the what we do section -->
   <section>
-    <div class="centered-div column" style="padding-top: 5vh;">
-      <h2 class="text-accent">
-        What we do?
-      </h2>
-      <div class="nurture">
-        <div class="nuture-image">
-          <img src="../img/Rescue.png" alt="">
-        </div>
-        <div class="nuture-content">
-          <h3 class="playfair text-accent">
-            Rescue
-          </h3>
-          <p style="text-align: justify; width: 80%; font-size: 1.5rem;">
-            Rescue is our primary focus. We tirelessly work to save abandoned and neglected pups from uncertain futures.
-            Through our extensive network and dedicated volunteers, we provide a lifeline for these furry friends,
-            offering them a chance at a loving home and a brighter tomorrow.
-          </p>
-        </div>
-      </div>
-      <div class="nuture-reversed">
-        <div class="nurture-img-reversed">
-          <img src="img/Nurture.png" alt="">
-        </div>
-        <div class="nuture-content">
-          <h3 class="playfair text-accent">
-            Nurture
-          </h3>
-          <p style="text-align: justify; width: 80%; font-size: 1.5rem;">
-            We believe in nurturing the bond between pet and owner, offering resources and support to ensure a happy and
-            healthy relationship. From training tips to veterinary care guidance, we're here to empower you every step
-            of the way, because every dog deserves a lifetime of love and care.
-          </p>
-        </div>
-
-      </div>
-      <div class="nurture">
-        <div class="nuture-image">
-          <img src="img/Adopt.png" alt="">
-        </div>
-        <div class="nuture-content">
-          <h3 class="playfair text-accent">
-            Adopt
-          </h3>
-          <p style="text-align: justify; width: 80%; font-size: 1.5rem;">
-            Adoption is central to our mission. We believe every dog deserves a forever family, and we match each pooch
-            with the perfect match through careful screening and matchmaking. Whether you're seeking a playful pup or a
-            loyal companion, we're here to facilitate the adoption process, ensuring a seamless transition for both you
-            and your new furry friend.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="want-support-section centered-div" style="flex-direction: column; justify-items: center;">
-      <h2 style="font-weight: 400;">
-        Want to Contribute?
-      </h2>
-      <p class="body1" style="margin: 2.5vh 0px; width: 50%; text-align: center;">
-        Join us in making a difference in the lives of dogs in need. Your contribution can help provide shelter, food,
-        and
-        medical care for those awaiting their forever homes.
-      </p>
-      <div class="outline-cta">
-        Learn More
+    <div class="centered-div" style="padding: 10% 5vw;">
+      <div class="campaign-grid">
+        <script src="../js/load_campagins.js"></script>
       </div>
     </div>
   </section>
   <!-- Footer -->
-  <section class="footer-section centered-div column">
+  <section class="footer-section centered-div column" style="background: rgba(254, 251, 243, 0.4);">
     <div class="row item-center">
       <img src="../img/logo_long.svg" alt="" srcset="" style="height: 7vh;">
       <div style="height: 2.5vh; width: 1px; background: #41444B;">
@@ -227,7 +159,7 @@
       </p>
       <div style="height: 1.5vh; width: 1px; background: #41444B; margin: 0px 2vw;">
       </div>
-      <p class="body2 footer-link">
+      <p class="body2 footer-link selected-footer-link">
         <a href="../pages/campaigns.html">Campaigns</a>
       </p>
       <div style="height: 1.5vh; width: 1px; background: #41444B; margin: 0px 2vw;">
@@ -242,10 +174,11 @@
       </p>
       <div style="height: 1.5vh; width: 1px; background: #41444B; margin: 0px 2vw;">
       </div>
-      <p class="body2 footer-link selected-footer-link">
+      <p class="body2 footer-link">
         <a href="../pages/about.html">About</a>
       </p>
     </div>
+
     <p class="body2" style="width: 50%; text-align: center; margin-bottom: 3.5vh;">
 
       Paws and Pups Charity is an aspiring nonprofit organization, ensuring transparency and trust in all our actions.

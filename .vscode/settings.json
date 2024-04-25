@@ -1,0 +1,25 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#e7d97e",
+    "activityBar.background": "#e7d97e",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#1ea190",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#e7d97e",
+    "statusBar.background": "#dfcc53",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#d7bf28",
+    "statusBarItem.remoteBackground": "#dfcc53",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#dfcc53",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#dfcc5399",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#dfcc53",
+  "cSpell.words": [
+    "Gambarino"
+  ]
+}

@@ -1,0 +1,162 @@
+/************************************************************************************
+ * THIS IS THE LANDING SECTION OF THE WEBSITE THAT CONTAINS THE LANDING OF THE PAGE *
+ ************************************************************************************/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 6.3rem;
+}
+
+.hero-img-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/m_landing_img.png);
+  overflow: hidden;
+  background-position: bottom center;
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+
+
+.landing-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.landing-image {
+  background-image: url(../../img/landing_img.png);
+  height: 88vh;
+  width: 100%;
+  overflow: hidden;
+  background-position: bottom 0px right 0px;
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+
+}
+
+.landing-image-div {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  align-items: end;
+}
+
+.landing-section-heading {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+  justify-content: center;
+}
+
+.landing-subheading-text {
+  line-clamp: 2;
+  margin-bottom: 20px;
+}
+
+.landing-social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.landing-social-icon-item {
+  height: 60px;
+  width: 60px;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.landing-social-icon-item:hover {
+  transform: scale(1.3);
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+
+
+/*******************************************
+ * THESE ARE THE WHAT WE DO SECTION STYLES *
+ *******************************************/
+
+
+.nurture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.nuture-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 3rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.nuture-image {
+  display: flex;
+  margin-bottom: 5%;
+  height: 90%;
+  border-radius: 40%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.nurture-img-reversed {
+  display: flex;
+  margin-bottom: 5%;
+  height: 90%;
+  border-radius: 40%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: end;
+}
+
+.nuture-reversed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0px;
+  height: 100%;
+  width: 100%;
+
+}

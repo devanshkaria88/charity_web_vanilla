@@ -4,25 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paws & Pups</title>
+  <title>About us</title>
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/about_styles/about.css">
+  <link rel="stylesheet" media="(min-width: 721px) and (max-width: 1239px)" href="../css/about_styles/about_t.css">
+  <link rel="stylesheet" media="(max-width: 720px)" href="../css/about_styles/about_m.css">
   <link rel="stylesheet" href="../css/navbar.css">
-  <!-- Home Stylesheets according to screen sizes -->
-  <link rel="stylesheet" href="css/home_styles/home.css">
-  <link rel="stylesheet" media="(min-width: 721px) and (max-width: 1239px)" href="css/home_styles/home_t.css">
-  <link rel="stylesheet" media="(max-width: 720px)" href="css/home_styles/home_m.css">
-
 </head>
 
 <body>
-  <!-- This is the navbar of the website -->
   <section style="position: relative;">
     <div class="drawer">
-      <div class="selectedNavbarItem">
+      <div class="unselectedNavbarItem">
         <h5 class="drawer-menu">
           <a href="../index.html">Home</a>
         </h5>
-        <div class="selectedNavbarItemIndicator">
+        <div class="unselectedNavbarItemIndicator">
         </div>
       </div>
       <div class="unselectedNavbarItem">
@@ -39,11 +36,11 @@
         <div class="unselectedNavbarItemIndicator">
         </div>
       </div>
-      <div class="unselectedNavbarItem">
+      <div class="selectedNavbarItem">
         <h5 class="drawer-menu">
           <a href="../pages/about.html">About us</a>
         </h5>
-        <div class="unselectedNavbarItemIndicator">
+        <div class="selectedNavbarItemIndicator">
         </div>
       </div>
       <div class="unselectedNavbarItem">
@@ -54,7 +51,7 @@
         </div>
       </div>
       <div style="margin-top: 10%;" class="outline-cta">
-        <a href="./pages/login.html">Login/Signup</a>
+        <a href="login.html">Login/Signup</a>
       </div>
     </div>
     <div class="navbar">
@@ -64,11 +61,11 @@
       </div>
       <div class="floating-navbar-container">
         <div class="floating-navbar-glass">
-          <div class="selectedNavbarItem">
+          <div class="unselectedNavbarItem">
             <h5 class="body2">
               <a href="../index.html">Home</a>
             </h5>
-            <div class="selectedNavbarItemIndicator">
+            <div class="unselectedNavbarItemIndicator">
             </div>
           </div>
           <div class="unselectedNavbarItem">
@@ -85,11 +82,11 @@
             <div class="unselectedNavbarItemIndicator">
             </div>
           </div>
-          <div class="unselectedNavbarItem">
-            <h5 class="body2">
+          <div class="selectedNavbarItem">
+            <h5 class="body2 text-accent2">
               <a href="../pages/about.html">About us</a>
             </h5>
-            <div class="unselectedNavbarItemIndicator">
+            <div class="selectedNavbarItemIndicator">
             </div>
           </div>
           <div class="unselectedNavbarItem">
@@ -119,76 +116,96 @@
   <section>
     <div class="hero fullScreen-div">
       <div class="hero-title">
-        <h1 class="text-accent heading-text">
-          Help Canines?
+        <h1 class="hero-heading text-secondary-accent">
+          <span class="text-accent" style="font-family: PlayfairDisplay-Regular;">
+            Charity
+          </span> is an act of <br> a soft <span class="text-accent"
+            style="font-family: PlayfairDisplay-Bold;">heart</span>
         </h1>
-        <h3 class="text-accent2 playfair" style="margin-top: 10px; font-weight: 400;">
-          We work to make man’s best <br>friend feel safer!
-        </h3>
-
-        <div class="outline-cta" style="margin-top: 20px;">
-          <a href="./pages/campaigns.html">Learn more</a>
-        </div>
       </div>
       <div class="hero-img-container">
-        <div class="hero-img"></div>
+        <img src="../img/about_hero.png" alt="" srcset="" class="hero-img">
       </div>
       <div class="mouse-icon">
         <img src="../img/icons/Mouse.svg" alt="" srcset="">
       </div>
     </div>
   </section>
-  <!-- This is the what we do section -->
+  <!-- This is the mission section -->
   <section>
-    <div class="centered-div column" style="padding-top: 5vh;">
+    <div class="fullScreen-div mission-section">
+      <div class="mission-img-container">
+        <img src="../img/about_mission.png" alt="" class="mission-img">
+      </div>
+      <div class="mission-desc-container">
+        <div class="mission-desc">
+          <h2 class="text-accent" style="padding-bottom: 5%;">
+            Our mission
+          </h2>
+          <p>
+            Our mission is to transform the lives of dogs in need by providing compassionate care, comprehensive rescue
+            efforts, and educational outreach programs. We are dedicated to rescuing, rehabilitating, and rehoming
+            abandoned, neglected, and abused dogs, ensuring they find loving forever homes. Through our unwavering
+            commitment to animal welfare, we strive to cultivate a community where every dog is valued, cherished, and
+            treated with the respect and care they deserve. Together, we work tirelessly to create a world where every
+            wagging tail represents a tale of hope, resilience, and boundless love.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- This is the charity stats section -->
+  <section>
+    <div class="centered-div column w-screen">
       <h2 class="text-accent">
-        What we do?
+        A drop in ocean
       </h2>
-      <div class="nurture">
-        <div class="nuture-image">
-          <img src="../img/Rescue.png" alt="">
+      <div class="charity-stat">
+        <div class="charity-stat-circle centered-div">
+          1500+
         </div>
-        <div class="nuture-content">
-          <h3 class="playfair text-accent">
-            Rescue
+        <div class="charity-stat-desc-container centered-div">
+          <h3 class="charity-stat-desc-title text-accent">
+            Lives Saved
           </h3>
-          <p style="text-align: justify; width: 80%; font-size: 1.5rem;">
-            Rescue is our primary focus. We tirelessly work to save abandoned and neglected pups from uncertain futures.
-            Through our extensive network and dedicated volunteers, we provide a lifeline for these furry friends,
-            offering them a chance at a loving home and a brighter tomorrow.
+          <p class="charity-stat-desc">
+            Over the past year, our organization has rescued and rehomed over 1,500 dogs in need, providing them with
+            a second chance at life
           </p>
-        </div>
-      </div>
-      <div class="nuture-reversed">
-        <div class="nurture-img-reversed">
-          <img src="img/Nurture.png" alt="">
-        </div>
-        <div class="nuture-content">
-          <h3 class="playfair text-accent">
-            Nurture
-          </h3>
-          <p style="text-align: justify; width: 80%; font-size: 1.5rem;">
-            We believe in nurturing the bond between pet and owner, offering resources and support to ensure a happy and
-            healthy relationship. From training tips to veterinary care guidance, we're here to empower you every step
-            of the way, because every dog deserves a lifetime of love and care.
-          </p>
-        </div>
 
-      </div>
-      <div class="nurture">
-        <div class="nuture-image">
-          <img src="img/Adopt.png" alt="">
         </div>
-        <div class="nuture-content">
-          <h3 class="playfair text-accent">
-            Adopt
-          </h3>
-          <p style="text-align: justify; width: 80%; font-size: 1.5rem;">
-            Adoption is central to our mission. We believe every dog deserves a forever family, and we match each pooch
-            with the perfect match through careful screening and matchmaking. Whether you're seeking a playful pup or a
-            loyal companion, we're here to facilitate the adoption process, ensuring a seamless transition for both you
-            and your new furry friend.
-          </p>
+      </div>
+      <div class="charity-stat-reversed">
+        <div class="charity-stat-circle centered-div">
+          10,000+
+        </div>
+        <div class="charity-stat-desc-container-reversed">
+          <div>
+            <h3 class="charity-stat-desc-title text-accent">
+              Community Outreach
+            </h3>
+            <p class="charity-stat-desc">
+              Through our educational programs and outreach initiatives, we have reached over 10,000 individuals,
+              promoting responsible pet ownership and fostering a deeper understanding of the importance of animal
+              welfare.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="charity-stat">
+        <div class="charity-stat-circle centered-div">
+          500+
+        </div>
+        <div class="charity-stat-desc-container">
+          <div>
+            <h3 class="charity-stat-desc-title text-accent">
+              Medical Care Provided
+            </h3>
+            <p class="charity-stat-desc">
+              Our organization has facilitated over 500 veterinary surgeries and medical treatments for homeless and
+              neglected dogs, ensuring they receive the care they desperately need to thrive.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -246,10 +263,11 @@
         <a href="../pages/about.html">About</a>
       </p>
     </div>
-    <p class="body2" style="width: 50%; text-align: center; margin-bottom: 3.5vh;">
 
+    <p class="body2" style="width: 50%; text-align: center; margin-bottom: 3.5vh;">
       Paws and Pups Charity is an aspiring nonprofit organization, ensuring transparency and trust in all our actions.
       Your support is backed by our commitment to making a real difference in the lives of dogs in need.
+
     </p>
     <div class="row item-center">
       <p class="body2">

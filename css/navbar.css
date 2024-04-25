@@ -1,0 +1,162 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  margin: 2.2vh 4.5vw;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: all 0.2s linear;
+}
+
+.navbar-logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.navbar-logo-container:hover {
+  transform: scaleX(1.03);
+}
+
+.floating-navbar-container {
+  width: fit-content;
+  /* overflow: hidden; */
+}
+
+.nav-menu-container {
+  /* width: 100%; */
+  width: 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  transform: 0.3s linear;
+}
+
+.signin-button-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.navbar-title {
+  height: 75px;
+  width: fit-content;
+}
+
+.floating-navbar-glass {
+  width: fit-content;
+  background: rgba(254, 251, 243, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 40px;
+
+  padding: 15px 25px;
+  display: flex;
+  text-wrap: nowrap;
+  align-items: center;
+  transition: all 0.2s linear;
+  gap: 3vw;
+}
+
+.selectedNavbarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #739072 !important;
+}
+
+.selectedNavbarItemIndicator {
+  margin-top: 5px;
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  background: #3A4D39;
+
+}
+
+.unselectedNavbarItem {
+  display: block;
+  cursor: pointer;
+}
+
+.unselectedNavbarItemIndicator {
+  border-radius: 10px;
+  height: 0px;
+  width: 0%;
+  background: #3A4D39;
+  transition: width .2s cubic-bezier(0, 0.5, 0.75, 1);
+}
+
+.unselectedNavbarItem:hover>.unselectedNavbarItemIndicator {
+  width: 100%;
+  height: 3px;
+  margin-top: -3px;
+}
+
+
+.navbar-button {
+  visibility: visible;
+  width: fit-content;
+}
+
+
+.collapsed-navbar-button {
+  background: rgba(254, 251, 243, 0.5);
+  padding: 10px;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(254, 251, 243, 0.7);
+}
+
+@media (max-width: 1240px) {
+
+  .floating-navbar-container {
+    width: 0px !important;
+    overflow: hidden !important;
+  }
+
+
+  .nav-menu-container {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .signin-button-container {
+    width: 0px;
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+
+
+.drawer {
+  height: 100vh;
+  background: rgba(254, 251, 243, 0.5);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  top: 0px;
+  right: -100%;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.drawer-menu {
+  margin: 20% 0px;
+  font-size: 3rem;
+}
