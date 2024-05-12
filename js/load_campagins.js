@@ -1,5 +1,3 @@
-// hehe josu kaik karsu anu pn..
-
 const charity_campaigns = [
   {
     name: "Adopt, Don't Shop",
